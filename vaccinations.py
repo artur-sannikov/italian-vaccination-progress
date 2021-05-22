@@ -1,7 +1,15 @@
 import pandas as pd
+import os
 from kaggle.api.kaggle_api_extended import KaggleApi
 
-vax_administration = pd.read_csv("https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/master/dati/somministrazioni-vaccini-latest.csv")
+vax_administration = pd.read_csv(
+    "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/master/dati/somministrazioni-vaccini-latest.csv"
+)
+
+# Change current working directory to project's root directory
+proj_dir = os.path.abspath(__file__)  # Absolute path to config.py
+dir_name = os.path.dirname(proj_dir)  # Extract directory name of project's root
+os.chdir(dir_name)
 
 # Translate columns from English into Italian
 renamed_cols = {
@@ -26,7 +34,7 @@ renamed_cols = {
     "codice_NUTS1": "NUTS1_code",
     "codice_NUTS2": "NUTS2_code",
     "codice_regione_ISTAT": "ISTAT_regional_code",
-    "nome_area": "region_name"
+    "nome_area": "region_name",
 }
 vax_administration = vax_administration.rename(renamed_cols, axis="columns")
 
