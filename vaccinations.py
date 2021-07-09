@@ -21,7 +21,7 @@ renamed_cols = {
     "sesso_femminile": "females",
     "categoria_operatori_sanitari_sociosanitari": "healthcare_workers",
     "categoria_personale_non_sanitario": "non_healthcare_workers",
-    "categoria_ospiti_rsa": "care_home_patients",
+    "categoria_ospiti_rs+a": "care_home_patients",
     "categoria_60_69": "category_60_69",
     "categoria_70_79": "category_70_79",
     "categoria_soggetti_fragili": "vulnerable_subjects",
