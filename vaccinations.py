@@ -3,7 +3,9 @@ import os
 import logging
 
 # Initialize formatters
-file_formatter = logging.Formatter("%(asctime)s~%(levelname)s~%(message)s")
+file_formatter = logging.Formatter(
+    "%(asctime)s~%(levelname)s~%(message)s~module:%(module)s~function:%(module)s"
+)
 console_formatter = logging.Formatterconsole_formatter = logging.Formatter(
     "%(levelname)s -- %(message)s"
 )
@@ -57,11 +59,8 @@ vax_administration = vax_administration.rename(renamed_cols, axis="columns")
 vax_administration.to_csv("./data/italian_vaccination.csv", index=False)
 
 # Kaggle authentication
-try:
-    api = KaggleApi()
-    api.authenticate()
-except:
-    logger.critical("Authentication failed")
+api = KaggleApi()
+api.authenticate()
 
 # Create a new version of the data set
 logging.info("Uploading new data set version")
