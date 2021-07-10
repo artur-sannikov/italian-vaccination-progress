@@ -31,9 +31,9 @@ vax_administration = vax_administration.rename(renamed_cols, axis="columns")
 
 vax_administration.to_csv("./data/italian_vaccination.csv", index=False)
 
-# # Kaggle authentication
-# api = KaggleApi()
-# api.authenticate()
+# Kaggle authentication
+api = KaggleApi()
+api.authenticate()
 
-# # Create a new version of the data set
-# api.dataset_create_version(folder="./data", version_notes="Daily Update")
+# Create a new version of the data set
+api.dataset_create_version(folder="./data", version_notes="Daily Update")
