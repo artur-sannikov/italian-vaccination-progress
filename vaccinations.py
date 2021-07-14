@@ -23,11 +23,13 @@ logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 logger.setLevel(logging.DEBUG)
 
+# Try authentication
 try:
     from kaggle.api.kaggle_api_extended import KaggleApi
 except:
     logging.exception("Authentication failed")
     exit()
+
 
 vax_administration = pd.read_csv(
     "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/master/dati/somministrazioni-vaccini-latest.csv"
