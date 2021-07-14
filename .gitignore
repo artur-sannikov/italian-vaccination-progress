@@ -129,4 +129,5 @@ dmypy.json
 .pyre/
 
 # Project specific
-./data/italian_vaccination.csv
+data/italian_vaccination.csv
+run
