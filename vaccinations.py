@@ -51,6 +51,7 @@ renamed_cols = {
     "prima_dose": "first_dose",
     "seconda_dose": "second_dose",
     "pregressa_infezione": "previous infection",
+    "dose_aggiuntiva": "booster_dose",
     "codice_NUTS1": "NUTS1_code",
     "codice_NUTS2": "NUTS2_code",
     "codice_regione_ISTAT": "ISTAT_regional_code",
