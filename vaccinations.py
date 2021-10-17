@@ -7,7 +7,7 @@ file_formatter = logging.Formatter(
     "%(asctime)s~%(levelname)s~%(message)s~module:%(module)s~function:%(module)s"
 )
 console_formatter = logging.Formatterconsole_formatter = logging.Formatter(
-    "%(levelname)s -- %(message)s"
+    "%(asctime)s~%(levelname)s -- %(message)s"
 )
 
 # Set handlers
