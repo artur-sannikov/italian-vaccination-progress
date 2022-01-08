@@ -59,6 +59,12 @@ renamed_cols = {
 }
 vax_administration = vax_administration.rename(renamed_cols, axis="columns")
 
+# Replace Pfizer Pediatrico to Pfizer for children
+vax_administration["supplier"].replace(
+    "Pfizer Pediatrico", "Pfizer for children", inplace=True
+)
+
+# Save in csv
 vax_administration.to_csv("./data/italian_vaccination.csv", index=False)
 
 # Kaggle authentication
