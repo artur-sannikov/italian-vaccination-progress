@@ -50,7 +50,7 @@ renamed_cols = {
     "sesso_femminile": "females",
     "prima_dose": "first_dose",
     "seconda_dose": "second_dose",
-    "pregressa_infezione": "previous infection",
+    "pregressa_infezione": "previous_infection",
     "dose_addizionale_booster": "additional_booster_dose",
     "booster_immuno": "booster_immuno",
     "d2_booster": "second_booster",
