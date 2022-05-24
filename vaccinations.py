@@ -43,7 +43,7 @@ os.chdir(dir_name)
 # Translate columns from English into Italian
 renamed_cols = {
     "data_somministrazione": "administration_date",
-    "fornitore": "supplier",
+    "forn": "supplier",
     "area": "region",
     "fascia_anagrafica": "age_range",
     "sesso_maschile": "males",
