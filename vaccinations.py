@@ -42,22 +42,22 @@ os.chdir(dir_name)
 
 # Translate columns from English into Italian
 renamed_cols = {
-    "data_somministrazione": "administration_date",
+    "data": "administration_date",
     "forn": "supplier",
     "area": "region",
-    "fascia_anagrafica": "age_range",
-    "sesso_maschile": "males",
-    "sesso_femminile": "females",
-    "prima_dose": "first_dose",
-    "seconda_dose": "second_dose",
-    "pregressa_infezione": "previous_infection",
-    "dose_addizionale_booster": "additional_booster_dose",
-    "booster_immuno": "booster_immuno",
-    "d2_booster": "second_booster",
-    "codice_NUTS1": "NUTS1_code",
-    "codice_NUTS2": "NUTS2_code",
-    "codice_regione_ISTAT": "ISTAT_regional_code",
-    "nome_area": "region_name",
+    "eta": "age_range",
+    "m": "males",
+    "f": "females",
+    "d1": "first_dose",
+    "d2": "second_dose",
+    "dpi": "previous_infection",
+    "db1": "additional_booster_dose",
+    "dbi": "booster_immuno",
+    "db2": "second_booster",
+    "N1": "NUTS1_code",
+    "N2": "NUTS2_code",
+    "ISTAT": "ISTAT_regional_code",
+    "reg": "region_name",
 }
 vax_administration = vax_administration.rename(renamed_cols, axis="columns")
 
