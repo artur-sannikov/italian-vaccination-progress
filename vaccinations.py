@@ -42,7 +42,6 @@ os.chdir(dir_name)
 
 # Translate columns from English into Italian
 renamed_cols = {
-    "index": "index",
     "data": "administration_date",
     "forn": "supplier",
     "area": "region",
