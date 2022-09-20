@@ -42,6 +42,7 @@ os.chdir(dir_name)
 
 # Translate columns from English into Italian
 renamed_cols = {
+    "index": "index",
     "data": "administration_date",
     "forn": "supplier",
     "area": "region",
@@ -52,7 +53,6 @@ renamed_cols = {
     "d2": "second_dose",
     "dpi": "previous_infection",
     "db1": "additional_booster_dose",
-    "dbi": "booster_immuno",
     "db2": "second_booster",
     "N1": "NUTS1_code",
     "N2": "NUTS2_code",
